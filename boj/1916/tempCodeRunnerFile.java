@@ -16,7 +16,7 @@ public class Main {
             int nowWeight = now[1];
 
             // 만약 이미 최소비용이라면 넘어감
-            if (dist[nowV] < nowWeight) continue;
+            if (dist[now] < nowWeight) continue;
 
             for (int[] next : graph.get(nowV)) {
                 int nextV = next[0];
